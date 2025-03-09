@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import { userRouter } from "./routes/user.js";
 import { recipesRouter } from "./routes/recipes.js";
 import connectDB from "./connectionstate.js"; 
-
+connectDB();
 const app = express();
 
 app.use(express.json());
